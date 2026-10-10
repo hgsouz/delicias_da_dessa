@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "name": "Bolo de cenoura",
+    "description": "Massa fofinha de cenoura com cobertura cremosa de brigadeiro.",
+    "price": 45.0,
+    "image": "/images/products/bolo-de-cenoura.svg",
+    "active": true
+  },
+  {
+    "id": "2",
+    "name": "Bolo de chocolate",
+    "description": "Massa de chocolate com recheio de brigadeiro e ganache.",
+    "price": 55.9,
+    "image": "/images/products/bolo-de-chocolate.svg",
+    "active": true
+  },
+  {
+    "id": "3",
+    "name": "Bolo red velvet",
+    "description": "Massa vermelha aveludada com recheio de cream cheese.",
+    "price": 68.0,
+    "image": "/images/products/bolo-red-velvet.svg",
+    "active": true
+  },
+  {
+    "id": "4",
+    "name": "Bolo de pote de morango",
+    "description": "Camadas de massa branca, creme de leite ninho e morangos.",
+    "price": 14.0,
+    "image": "/images/products/bolo-de-pote-morango.svg",
+    "active": true
+  },
+  {
+    "id": "5",
+    "name": "Bolo de pote ninho com Nutella",
+    "description": "Massa de baunilha, creme de ninho e recheio de avelã.",
+    "price": 15.0,
+    "image": "/images/products/bolo-de-pote-ninho-nutella.svg",
+    "active": true
+  },
+  {
+    "id": "6",
+    "name": "Biscoito decorado",
+    "description": "Biscoito amanteigado com glacê, personalizado por tema.",
+    "price": 9.0,
+    "image": "/images/products/biscoito-decorado.svg",
+    "active": true
+  },
+  {
+    "id": "7",
+    "name": "Cupcake de baunilha",
+    "description": "Cupcake macio com cobertura de buttercream.",
+    "price": 8.5,
+    "image": "/images/products/cupcake-de-baunilha.svg",
+    "active": true
+  },
+  {
+    "id": "8",
+    "name": "Torta de limão",
+    "description": "Base crocante, creme de limão e merengue maçaricado.",
+    "price": 52.0,
+    "image": "/images/products/torta-de-limao.svg",
+    "active": true
+  },
+  {
+    "id": "9",
+    "name": "Brownie recheado",
+    "description": "Brownie denso de chocolate com recheio cremoso.",
+    "price": 12.0,
+    "image": "/images/products/brownie-recheado.svg",
+    "active": true
+  },
+  {
+    "id": "10",
+    "name": "Caixa de brigadeiros gourmet",
+    "description": "Caixa com 12 brigadeiros de sabores variados.",
+    "price": 36.0,
+    "image": "/images/products/caixa-de-brigadeiros.svg",
+    "active": true
+  }
+]

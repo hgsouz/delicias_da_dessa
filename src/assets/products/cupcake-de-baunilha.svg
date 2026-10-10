@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="800" height="800" role="img">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF6E3"/>
+      <stop offset="1" stop-color="#F4DCCB"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="800" fill="url(#bg)"/>
+
+  <circle cx="400" cy="350" r="250" fill="#FFFFFF" fill-opacity=".45"/>
+  <g transform="translate(400 350) scale(1.25)">
+    <path d="M-95 20 H95 L70 130 H-70 Z" fill="#E8A9B8"/>
+    <path d="M-55 20 L-40 130 M-18 20 L-13 130 M18 20 L13 130 M55 20 L40 130" stroke="#FFFFFF" stroke-opacity=".5" stroke-width="5"/>
+    <ellipse cx="0" cy="12" rx="108" ry="40" fill="#FFF0F3"/>
+    <ellipse cx="0" cy="-30" rx="76" ry="38" fill="#FFF0F3"/>
+    <ellipse cx="0" cy="-66" rx="44" ry="28" fill="#FFF0F3"/>
+    <circle cx="0" cy="-104" r="16" fill="#E5322D"/>
+    </g>
+  <text x="400" y="700" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" font-size="44" fill="#4A2C17">Cupcake de baunilha</text>
+  <text x="784" y="784" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="17" fill="#4A2C17" fill-opacity=".55">imagem ilustrativa 800x800</text>
+</svg>
