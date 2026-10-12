@@ -1,9 +1,11 @@
-import Home from "./pages/home";
+// import Home from "./pages/home";
+import Products from "./pages/pruducts";
 
 function App() {
   return (
     <>
-      <Home />
+      {/* <Home /> */}
+      <Products />
     </>
   );
 }
