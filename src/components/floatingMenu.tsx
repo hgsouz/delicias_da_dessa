@@ -1,6 +1,7 @@
 // src/components/FloatingMenu.tsx
 import { useEffect, useRef, useState } from "react";
 import menuIcon from "../assets/icons/menuIcon.svg";
+import { Link } from "react-router";
 
 const links = [
   { label: "Home", href: "/" },
@@ -60,13 +61,13 @@ export function FloatingMenu() {
         <ul className="overflow-hidden rounded-xl bg-(--primary-color) shadow-lg ring-1 ring-(--terdiary-color)/40">
           {links.map((link) => (
             <li key={link.href}>
-              <a
-                href={link.href}
+              <Link
+                to={link.href}
                 onClick={() => setOpen(false)}
                 className="block px-5 py-3 text-(--secondary-color) transition-colors hover:bg-[#F8EBD8]"
               >
                 {link.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
