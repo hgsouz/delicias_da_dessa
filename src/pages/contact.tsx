@@ -4,23 +4,25 @@ import { Input } from "../components/input";
 
 function Contact() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header />
 
-      <h1 className="text-center my-10 text-3xl font-bold">Fale conosco</h1>
+      <section className="grow">
+        <h1 className="text-center my-10 text-3xl font-bold">Fale conosco</h1>
 
-      <form action="" className="flex flex-col mx-5 mb-70">
-        <Input id="name" label="Nome completo" />
-        <Input id="email" label="E-mail" />
-        <Input
-          id="message"
-          label="Mensagem"
-          placeholder="Deixe aqui sua mensagem completa"
-        />
-      </form>
+        <form action="" className="flex flex-col mx-5 ">
+          <Input id="name" label="Nome completo" />
+          <Input id="email" label="E-mail" />
+          <Input
+            id="message"
+            label="Mensagem"
+            placeholder="Deixe aqui sua mensagem completa"
+          />
+        </form>
+      </section>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

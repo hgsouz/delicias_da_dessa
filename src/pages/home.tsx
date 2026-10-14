@@ -11,10 +11,12 @@ import { Card } from "../components/card";
 
 function Home() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header />
+
       <HeroHome image={heroImage} />
-      <section>
+
+      <section className="grow">
         <h2 className="text-(--secondary-color) text-center mt-16 text-2xl font-bold">
           Conheça nossos produtos
         </h2>
@@ -24,8 +26,9 @@ function Home() {
           <Card link="/" image={bolosEncomendaImage} />
         </div>
       </section>
+
       <Footer />
-    </>
+    </div>
   );
 }
 

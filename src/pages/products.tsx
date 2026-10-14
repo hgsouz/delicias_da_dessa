@@ -1,87 +1,42 @@
-import { ProductCard } from "../components/productCard";
-import boloImage from "../assets/products/bolo-de-chocolate.svg";
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
+import { useEffect, useState } from "react";
+import { getProducts, type Product } from "../services/products";
+import { ProductCard } from "../components/productCard";
+import { Loading } from "../components/loadingSpinner";
 
 function Products() {
+  const [products, setProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    getProducts()
+      .then((data) => setProducts(data.filter((p) => p.active)))
+      .catch((e) => {
+        console.error("Erro ao carregar produtos:", e);
+        setError("Não foi possível carregar os produtos.");
+      })
+      .finally(() => setLoading(false));
+  }, []);
+
   return (
     <>
       <Header />
 
       <section className="grid grid-cols-3 gap-4 my-10 mx-5">
-        <ProductCard
-          image={boloImage}
-          name="Bolo"
-          description="Bolo fofinho"
-          price={30.0}
-        />
-        <ProductCard
-          image={boloImage}
-          name="Bolo"
-          description="Bolo fofinho"
-          price={30.0}
-        />
-        <ProductCard
-          image={boloImage}
-          name="Bolo"
-          description="Bolo fofinho"
-          price={30.0}
-        />
+        {loading && <Loading />}
+        {error && <p>{error}</p>}
 
-        <ProductCard
-          image={boloImage}
-          name="Bolo"
-          description="Bolo fofinho"
-          price={30.0}
-        />
-        <ProductCard
-          image={boloImage}
-          name="Bolo"
-          description="Bolo fofinho"
-          price={30.0}
-        />
-        <ProductCard
-          image={boloImage}
-          name="Bolo"
-          description="Bolo fofinho"
-          price={30.0}
-        />
-        <ProductCard
-          image={boloImage}
-          name="Bolo"
-          description="Bolo fofinho"
-          price={30.0}
-        />
-        <ProductCard
-          image={boloImage}
-          name="Bolo"
-          description="Bolo fofinho"
-          price={30.0}
-        />
-        <ProductCard
-          image={boloImage}
-          name="Bolo"
-          description="Bolo fofinho"
-          price={30.0}
-        />
-        <ProductCard
-          image={boloImage}
-          name="Bolo"
-          description="Bolo fofinho"
-          price={30.0}
-        />
-        <ProductCard
-          image={boloImage}
-          name="Bolo"
-          description="Bolo fofinho"
-          price={30.0}
-        />
-        <ProductCard
-          image={boloImage}
-          name="Bolo"
-          description="Bolo fofinho"
-          price={30.0}
-        />
+        {products.map((product) => (
+          <ProductCard
+            key={product.id}
+            image={product.image}
+            name={product.name}
+            description={product.description}
+            price={product.price}
+          />
+        ))}
       </section>
 
       <Footer />

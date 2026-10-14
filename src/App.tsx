@@ -1,17 +1,27 @@
-import Home from "./pages/home";
-// import About from "./pages/about";
-// import Contact from "./pages/contact";
-// import Products from "./pages/products";
+import { lazy, Suspense } from "react";
+import { Route, Routes } from "react-router";
+import { Loading } from "./components/loadingSpinner.tsx";
 
-function App() {
+const Home = lazy(() => import("./pages/home.tsx"));
+const Products = lazy(() => import("./pages/products.tsx"));
+const About = lazy(() => import("./pages/about.tsx"));
+const Contact = lazy(() => import("./pages/contact.tsx"));
+
+export default function App() {
   return (
-    <>
-      <Home />
-      {/* <Products /> */}
-      {/* <About /> */}
-      {/* <Contact /> */}
-    </>
+    <Suspense
+      fallback={
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-transparent backdrop-blur-md">
+          <Loading size="lg" text="Carregando..." />
+        </div>
+      }
+    >
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="products" element={<Products />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
+    </Suspense>
   );
 }
-
-export default App;

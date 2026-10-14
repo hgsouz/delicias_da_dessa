@@ -4,7 +4,7 @@ import { FloatingMenu } from "./floatingMenu";
 
 export const Header = () => {
   return (
-    <header className="bg-amber-50 border-b border-b-(--terdiary-color) p-2">
+    <header className="bg-amber-50 border-b border-b-(--terdiary-color) p-2 sticky top-0 z-50">
       <div className="flex items-center justify-between mx-5">
         <a href="/">
           <img
