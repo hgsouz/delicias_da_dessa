@@ -1,16 +1,15 @@
-// import Home from "./pages/home";
-import About from "./pages/about";
-import Contact from "./pages/contact";
 import Home from "./pages/home";
-import Products from "./pages/pruducts";
+// import About from "./pages/about";
+// import Contact from "./pages/contact";
+// import Products from "./pages/products";
 
 function App() {
   return (
     <>
-      {/* <Home /> */}
+      <Home />
       {/* <Products /> */}
       {/* <About /> */}
-      <Contact />
+      {/* <Contact /> */}
     </>
   );
 }
