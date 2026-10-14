@@ -19,10 +19,10 @@ export const Footer = () => {
         </div>
         <div className="flex my-auto gap-6">
           <a href={instagramLink}>
-            <img src={instagramIcon} alt="" className="w-8 h-8" />
+            <img src={instagramIcon} alt="" className="w-6 h-6" />
           </a>
           <a href={whatsappLink}>
-            <img src={whatsappIcon} alt="" className="w-8 h-8" />
+            <img src={whatsappIcon} alt="" className="w-6 h-6" />
           </a>
         </div>
       </section>

@@ -44,7 +44,7 @@ export function FloatingMenu() {
         aria-expanded={open}
         aria-controls="floating-menu"
         onClick={() => setOpen((prev) => !prev)}
-        className="flex h-10 w-10 items-center justify-center"
+        className="flex h-6 w-6 items-center justify-center"
       >
         <img src={menuIcon} alt="" className="h-6 w-6" />
       </button>
