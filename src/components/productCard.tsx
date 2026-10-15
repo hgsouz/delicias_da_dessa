@@ -17,7 +17,7 @@ export const ProductCard = ({
       <div className="flex flex-col gap-3">
         <p className="font-bold text-sm">{name}</p>
         <p className="text-sm ">{description}</p>
-        <p className="text-sm ">R$ {price}</p>
+        <p className="text-md ">R$ {price}</p>
       </div>
     </div>
   );

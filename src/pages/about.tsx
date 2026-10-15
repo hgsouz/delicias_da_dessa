@@ -9,7 +9,6 @@ function About() {
       <Header />
 
       <section className="my-10 mx-5">
-        <h1 className="text-2xl font-bold text-center">Sobre nós</h1>
         <img src={personalPicture} alt="" className="max-h-100 mx-auto my-10" />
         <p>
           Olá! Que bom ter você por aqui. Sou a Andressa. Muitos me conhecem

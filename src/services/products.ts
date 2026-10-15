@@ -1,10 +1,21 @@
+export type ProductUnit = "un" | "kg";
+
+export interface ProductVariant {
+  id: string;
+  label: string;
+  price: number;
+  image?: string;
+}
+
 export interface Product {
   id: string;
   name: string;
   description: string;
-  price: number;
+  longDescription: string;
   image: string;
+  unit: ProductUnit;
   active: boolean;
+  variants: [ProductVariant, ...ProductVariant[]]; // pelo menos uma
 }
 
 const PRODUCTS_URL =
