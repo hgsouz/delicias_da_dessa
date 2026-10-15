@@ -29,13 +29,7 @@ function Products() {
         {error && <p>{error}</p>}
 
         {products.map((product) => (
-          <ProductCard
-            key={product.id}
-            image={product.image}
-            name={product.name}
-            description={product.description}
-            price={product.price}
-          />
+          <ProductCard key={product.id} product={product} />
         ))}
       </section>
 
