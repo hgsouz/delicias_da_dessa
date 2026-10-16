@@ -10,16 +10,18 @@ export const ProductCard = ({ product }: ProductCardProps) => {
   const hasVariants = product.variants.length > 1;
 
   return (
-    <div className="flex flex-col gap-6 mb-6">
+    <div className="flex h-full flex-col gap-4">
       <img
         src={product.image}
         alt={product.name}
-        className="max-h-34 max-w-34 rounded-2xl"
+        className="aspect-square w-full object-cover rounded-2xl"
       />
-      <div className="flex flex-col gap-3">
-        <p className="font-bold text-sm">{product.name}</p>
-        <p className="text-sm">{product.description}</p>
-        <p className="text-sm">
+      <div className="flex flex-1 flex-col gap-4">
+        <p className="font-bold text-sm line-clamp-2 min-h-10">
+          {product.name}
+        </p>
+        <p className="text-sm line-clamp-3 min-h-15">{product.description}</p>
+        <p className="text-sm mt-auto">
           {hasVariants && "A partir de "}
           {brl(fromPrice)}
         </p>
