@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 interface cardProps {
   image: string;
   link: string;
@@ -5,8 +7,8 @@ interface cardProps {
 
 export const Card = ({ image, link }: cardProps) => {
   return (
-    <a href={link}>
+    <Link to={link}>
       <img src={image} alt="" className="max-h-80 max-w-60 rounded-2xl" />
-    </a>
+    </Link>
   );
 };

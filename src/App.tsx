@@ -6,6 +6,8 @@ const Home = lazy(() => import("./pages/home.tsx"));
 const Products = lazy(() => import("./pages/products.tsx"));
 const About = lazy(() => import("./pages/about.tsx"));
 const Contact = lazy(() => import("./pages/contact.tsx"));
+const ProductDetail = lazy(() => import("./pages/productDetail.tsx"));
+const Cart = lazy(() => import("./pages/cart.tsx"));
 
 export default function App() {
   return (
@@ -21,6 +23,8 @@ export default function App() {
         <Route path="products" element={<Products />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />
+        <Route path="products/:id" element={<ProductDetail />} />
+        <Route path="cart" element={<Cart />} />
       </Routes>
     </Suspense>
   );

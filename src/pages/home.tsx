@@ -20,7 +20,7 @@ function Home() {
         <h2 className="text-(--secondary-color) text-center mt-16 text-2xl font-bold">
           Conheça nossos produtos
         </h2>
-        <div className="flex gap-6 mx-5 my-16 overflow-auto">
+        <div className="flex gap-6 mx-5 my-16 overflow-auto justify-center">
           <Card link="/" image={biscoitoImage} />
           <Card link="/" image={bolosDePoteImage} />
           <Card link="/" image={bolosEncomendaImage} />

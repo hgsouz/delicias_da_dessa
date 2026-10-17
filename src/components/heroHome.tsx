@@ -4,8 +4,12 @@ interface heroHomeProps {
 
 export const HeroHome = ({ image }: heroHomeProps) => {
   return (
-    <section className="max-w-full  max-h-1/3 border-b-2 border-b-(--terdiary-color)">
-      <img src={image} alt="Hero image with promotions of the month" />
+    <section className="border-b border-b-(--terdiary-color)">
+      <img
+        src={image}
+        alt="Hero image with promotions of the month"
+        className="w-full max-h-1/4 "
+      />
     </section>
   );
 };

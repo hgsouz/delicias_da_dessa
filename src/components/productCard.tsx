@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import type { Product } from "../services/products";
 import { brl } from "../utils/currency";
 
@@ -10,7 +11,7 @@ export const ProductCard = ({ product }: ProductCardProps) => {
   const hasVariants = product.variants.length > 1;
 
   return (
-    <div className="flex h-full flex-col gap-4">
+    <Link to={`/products/${product.id}`} className="flex h-full flex-col gap-4">
       <img
         src={product.image}
         alt={product.name}
@@ -26,6 +27,6 @@ export const ProductCard = ({ product }: ProductCardProps) => {
           {brl(fromPrice)}
         </p>
       </div>
-    </div>
+    </Link>
   );
 };
