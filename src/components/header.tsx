@@ -2,6 +2,7 @@ import { Link } from "react-router";
 import logoIcon from "../assets/logo.svg";
 import { ShoppingCart } from "./cartIcon";
 import { FloatingMenu } from "./floatingMenu";
+import { ListMenu } from "./listMenu";
 
 export const Header = () => {
   return (
@@ -14,7 +15,8 @@ export const Header = () => {
             className="w-20 h-20"
           />
         </Link>
-        <div className="flex my-auto gap-8">
+        <div className="flex my-auto gap-8 md:gap-10">
+          <ListMenu />
           <ShoppingCart />
           <FloatingMenu />
         </div>

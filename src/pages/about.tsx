@@ -5,12 +5,16 @@ import personalPicture from "../assets/about/personalPicture.png";
 
 function About() {
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header />
 
-      <section className="my-10 mx-5">
-        <img src={personalPicture} alt="" className="max-h-100 mx-auto my-10" />
-        <p>
+      <main className="my-10 mx-5 grow md:flex md:gap-30">
+        <img
+          src={personalPicture}
+          alt=""
+          className="max-h-100 mx-auto my-10 md:max-h-200"
+        />
+        <p className="md:m-auto md:text-xl">
           Olá! Que bom ter você por aqui. Sou a Andressa. Muitos me conhecem
           hoje pelo meu trabalho na confeitaria, mas por trás de cada doce
           existe uma história de muita luta, coragem e, acima de tudo, amor
@@ -41,10 +45,10 @@ function About() {
           para você e sua família. Seja muito bem-vindo(a) à minha história e ao
           meu trabalho!
         </p>
-      </section>
+      </main>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

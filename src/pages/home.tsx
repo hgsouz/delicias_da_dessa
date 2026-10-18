@@ -16,7 +16,7 @@ function Home() {
 
       <HeroHome image={heroImage} />
 
-      <section className="grow">
+      <main className="grow">
         <h2 className="text-(--secondary-color) text-center mt-16 text-2xl font-bold">
           Conheça nossos produtos
         </h2>
@@ -25,7 +25,7 @@ function Home() {
           <Card link="/" image={bolosDePoteImage} />
           <Card link="/" image={bolosEncomendaImage} />
         </div>
-      </section>
+      </main>
 
       <Footer />
     </div>

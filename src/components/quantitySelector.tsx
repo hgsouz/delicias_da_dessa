@@ -21,7 +21,7 @@ export const QuantitySelector = ({
         onClick={decrease}
         disabled={value <= min}
         aria-label="Diminuir quantidade"
-        className="w-9 h-9 rounded-full border border-(--terdiary-color) text-lg disabled:opacity-40"
+        className="w-9 h-9 rounded-full border border-(--terdiary-color) text-lg disabled:opacity-40 md:cursor-pointer"
       >
         −
       </button>
@@ -34,7 +34,7 @@ export const QuantitySelector = ({
         type="button"
         onClick={increase}
         aria-label="Aumentar quantidade"
-        className="w-9 h-9 rounded-full border border-(--terdiary-color) text-lg"
+        className="w-9 h-9 rounded-full border border-(--terdiary-color) text-lg md:cursor-pointer"
       >
         +
       </button>

@@ -24,14 +24,14 @@ function Products() {
     <>
       <Header />
 
-      <section className="grid grid-cols-3 gap-x-4 gap-y-8 items-stretch my-10 mx-5">
+      <main className="grid grid-cols-3 gap-x-4 gap-y-8 items-stretch my-10 mx-5 md:grid-cols-5 md:gap-x-10 md:gap-y-20">
         {loading && <Loading />}
         {error && <p>{error}</p>}
 
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
-      </section>
+      </main>
 
       <Footer />
     </>

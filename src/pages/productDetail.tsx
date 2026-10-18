@@ -80,10 +80,10 @@ function ProductDetailContent({ id }: { id?: string }) {
   };
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header />
 
-      <main className="mx-5 my-10">
+      <main className="mx-5 my-10 grow">
         <Link to="/products" className="text-sm underline">
           ← Voltar aos produtos
         </Link>
@@ -135,7 +135,7 @@ function ProductDetailContent({ id }: { id?: string }) {
             <button
               type="button"
               onClick={handleAdd}
-              className="rounded-full bg-(--secondary-color) px-6 py-3 font-bold"
+              className="rounded-full bg-(--secondary-color) px-6 py-3 font-bold md:cursor-pointer"
             >
               Adicionar ao carrinho
             </button>
@@ -144,7 +144,7 @@ function ProductDetailContent({ id }: { id?: string }) {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

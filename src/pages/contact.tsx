@@ -7,7 +7,7 @@ function Contact() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <section className="grow">
+      <main className="grow">
         <h1 className="text-center my-10 text-3xl font-bold">Fale conosco</h1>
 
         <form action="" className="flex flex-col mx-5 ">
@@ -19,7 +19,7 @@ function Contact() {
             placeholder="Deixe aqui sua mensagem completa"
           />
         </form>
-      </section>
+      </main>
 
       <Footer />
     </div>

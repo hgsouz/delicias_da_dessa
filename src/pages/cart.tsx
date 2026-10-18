@@ -48,10 +48,10 @@ function Cart() {
   const hasUnavailable = !loading && !error && lines.length < items.length;
 
   return (
-    <>
+    <div className="flex flex-col min-h-screen">
       <Header />
 
-      <main className="mx-5 my-10 flex flex-col gap-6">
+      <main className="mx-5 my-10 flex flex-col gap-6 grow">
         <h1 className="text-2xl font-bold">Meu carrinho</h1>
 
         {items.length === 0 && (
@@ -160,7 +160,7 @@ function Cart() {
       </main>
 
       <Footer />
-    </>
+    </div>
   );
 }
 

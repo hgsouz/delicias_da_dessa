@@ -38,7 +38,7 @@ export function FloatingMenu() {
   }, [open]);
 
   return (
-    <div ref={containerRef} className="relative">
+    <div ref={containerRef} className="relative md:hidden">
       <button
         type="button"
         aria-label={open ? "Fechar menu" : "Abrir menu"}
