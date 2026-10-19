@@ -142,7 +142,7 @@ function Cart() {
                 href={buildWhatsAppUrl(lines, total)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="rounded-full bg-(--terdiary-color) px-6 py-3 font-bold"
+                className="rounded-full bg-(--secondary-color) px-6 py-3 font-bold"
               >
                 Finalizar pedido
               </a>

@@ -8,7 +8,7 @@ function About() {
     <div className="flex flex-col min-h-screen">
       <Header />
 
-      <main className="my-10 mx-5 grow md:flex md:gap-30">
+      <main className="my-10 mx-5 grow lg:flex lg:gap-30">
         <img
           src={personalPicture}
           alt=""

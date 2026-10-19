@@ -1,6 +1,10 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router";
 import { Loading } from "./components/loadingSpinner.tsx";
+// import AdminLogin from "./pages/admin/adminLogin.tsx";
+// import { RequireAuth } from "./components/admin/requireAuth.tsx";
+// import Dashboard from "./pages/admin/dashboard.tsx";
+// import SiteSettings from "./pages/admin/siteSettings.tsx";
 
 const Home = lazy(() => import("./pages/home.tsx"));
 const Products = lazy(() => import("./pages/products.tsx"));
@@ -25,6 +29,14 @@ export default function App() {
         <Route path="contact" element={<Contact />} />
         <Route path="products/:id" element={<ProductDetail />} />
         <Route path="cart" element={<Cart />} />
+
+        {/* <Route path="admin/login" element={<AdminLogin />} />
+        <Route path="admin" element={<RequireAuth />}>
+          <Route index element={<Dashboard />} />
+          <Route path="products/new" element={<Dashboard />}>
+          <Route path="products/:id" element={<Dashboard />}>
+          <Route path="site" element={<SiteSettings />}></Route>
+        </Route> */}
       </Routes>
     </Suspense>
   );
